@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;    
+    list-style: none;
+    text-decoration: none;
+    font-family: arial;
+}
+
+body{
+    font-family: Arial;
+}
+
+header {
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo{
+    margin-left: 30px;
+    width: 200px;
+}
+
+.Logo h1{
+    font-size: 18px;
+}
+
+#IndexBlockOne {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/IndexImageOne.jpg);
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+#WelcomeMSG {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 160px 0px 0px 0px;
+}
+
+#infoMSG {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 200px 0px 40px 0px;
+}
+
+#RequestTrainingProgram {
+    background: red;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 15px 25px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    transition: all 0.2s ease 0s;
+}
+
+#RequestTrainingProgram:hover {
+    opacity: 0.6;
+}
+
+#IndexBlockTwo {
+    width: 100%;
+    height: 85vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0px;  
+}
+
+#IndexBlockTwo h2 {
+    margin: 0px;
+    padding: 40px 0px 0px 0px;
+    color: white;
+    text-align: center; 
+}
+
+#IndexBlockTwoP {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#SoftwareLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px;
+    margin: 10px 200px;
+    height: 50vh;
+    padding-bottom: 100px;
+}
+
+
+.SoftwareCard {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+
+.SoftwareCard:hover {
+    transform: rotateY(180deg);
+}
+
+.SoftwareCardDisplay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    background-color: black;
+}
+
+.SoftwareCardInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-width: 2px;
+    border-style: solid;
+    background-color: black;
+    border-color: red;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+
+.SoftwareCardDisplay h1{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+.SoftwareCardInfo h1 {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: red;
+}
+
+.SoftwareCardInfo p {
+    color: red;
+    padding: 30px 30px 60px 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#CardButton {
+    background: red;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    transition: all 0.2s ease 0s;
+}
+
+#CardButton:hover {
+    opacity: 0.6;
+}
+
+.CardImage {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+#Footer {
+    width: 90%;
+  
+}
+
+#ContactBlockOne {
+    width: 100%;
+    height: 90vh;
+    background-color: #FFFDFA;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+
+.ContactContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactContainer h2{
+    color: white;
+    font-size: 30px;
+}
+
+.ContactContainer h1{
+    color: white;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.ContactContainer p{
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.ContactForm {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.LeftBox {
+    background: url("../Images/contactformimage.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    text-align: left;  
+}
+
+.RightBox {
+    padding: 20px 0px 120px;
+    background-color: black;
+}
+
+.ContactInfo {
+    width: 60%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: black;
+    margin-bottom: 30px;
+    transition: .3s;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 5px 10px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.ContactInfo:hover {
+    background-color: red;
+    opacity: 0.6;
+}
+
+textarea {
+    min-height: 150px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.ContactButton {
+    background: white;
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 5px 40px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    transition: all 0.2s ease 0s;
+}
+
+.ContactButton:hover {
+    opacity: 0.6;
+    background: red;
+}
+
+#ContactBLockOneP {
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#notfound {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+#runningman {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-top: 200px;
+}
+
+#notfound p {
+    color: white;
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+
+
+nav {
+    width: 100%;
+    height: 40px;
+    background: black;
+}
+
+    nav > ul {
+        display: flex;
+        justify-content: right;
+    }
+
+    nav ul li {
+        position: relative;
+    }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            height: 40px;
+            width: 100px;
+            text-align: center;
+            padding-top: 10px;
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+        }
+
+            nav ul li a:hover,
+            nav .MenuLayerTwo ul li a:hover,
+            nav .MenuLayerTwo ul li a.active {
+                background: red;
+                opacity: 0.8;
+            }
+
+    nav .MenuLayerTwo {
+        position: absolute;
+        display: none;
+    }
+
+        nav .MenuLayerTwo ul li a {
+            width: 120px;
+            background: black;
+            text-align: center;
+            padding: 10px;
+        }
+
+    nav ul li a.MenuLayerOne.active + .MenuLayerTwo {
+        display: block;
+    }
+
+.MenuLayerThree {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    display: none;
+}
+
+nav ul li a.MenuLayerTwoItem.active + .MenuLayerThree {
+    display: block;
+}
