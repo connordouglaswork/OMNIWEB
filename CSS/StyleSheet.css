@@ -31,7 +31,7 @@ header {
 #IndexBlockOne {
     width: 100%;
     height: 100vh;
-    background-image: url(../Images/IndexImageOne.jpg);
+    background-image: url(../Images/IndexImage.jpg);
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -205,121 +205,9 @@ header {
   
 }
 
-#ContactBlockOne {
-    width: 100%;
-    height: 90vh;
-    background-color: #FFFDFA;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
 
-
-
-.ContactContainer {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ContactContainer h2{
-    color: white;
-    font-size: 30px;
-}
-
-.ContactContainer h1{
-    color: white;
-    margin-top: 40px;
-    margin-left: 30px;
-    margin-right: 10px;
-}
-
-.ContactContainer p{
-    color: white;
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-right: 10px;
-    font-size: 12px;
-}
-
-.ContactForm {
-    max-width: 850px;
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
-}
-
-.LeftBox {
-    background: url("../Images/contactformimage.png") no-repeat center;
-    background-size: cover;
-    height: 100%;
-    text-align: left;  
-}
-
-.RightBox {
-    padding: 20px 0px 120px;
-    background-color: black;
-}
-
-.ContactInfo {
-    width: 60%;
-    border: 2px solid rgba(0, 0, 0, 0);
-    outline: none;
-    background-color: black;
-    margin-bottom: 30px;
-    transition: .3s;
-    color: white;
-    border-bottom: 1px solid white;
-    padding: 5px 10px;
-    font-family: Arial;
-    font-size: 14px;
-}
-
-.ContactInfo:hover {
-    background-color: red;
-    opacity: 0.6;
-}
-
-textarea {
-    min-height: 150px;
-    font-family: Arial;
-    font-size: 14px;
-}
-
-.ContactButton {
-    background: white;
-    color: black;
-    font-size: 18px;
-    text-transform: capitalize;
-    padding: 5px 40px;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    transition: all 0.2s ease 0s;
-}
-
-.ContactButton:hover {
-    opacity: 0.6;
-    background: red;
-}
-
-#ContactBLockOneP {
-    font-size: 12px;
-    color: black;
-    text-align: center;
-    padding-bottom: 30px;
-}
 
 #notfound {
-    background-color: black;
     width: 100%;
     height: 100vh;
     background-color: black;
@@ -345,55 +233,55 @@ textarea {
 }
 
 
-
+/*------------------------------------------navigation section---------------------------------------------------*/
 nav {
     width: 100%;
     height: 40px;
     background: black;
 }
 
-    nav > ul {
-        display: flex;
-        justify-content: right;
-    }
+nav > ul {
+    display: flex;
+    justify-content: right;
+}
 
-    nav ul li {
-        position: relative;
-    }
+nav ul li {
+    position: relative;
+}
 
-        nav ul li a {
-            display: block;
-            color: white;
-            height: 40px;
-            width: 100px;
-            text-align: center;
-            padding-top: 10px;
-            transition: all 0.2s ease;
-            box-sizing: border-box;
-        }
+nav ul li a {
+    display: block;
+    color: white;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    padding-top: 10px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
 
-            nav ul li a:hover,
-            nav .MenuLayerTwo ul li a:hover,
-            nav .MenuLayerTwo ul li a.active {
-                background: red;
-                opacity: 0.8;
-            }
+nav ul li a:hover,
+nav .MenuLayerTwo ul li a:hover,
+nav .MenuLayerTwo ul li a.active {
+    background: red;
+    opacity: 0.8;
+}
 
-    nav .MenuLayerTwo {
-        position: absolute;
-        display: none;
-    }
+nav .MenuLayerTwo {
+    position: absolute;
+    display: none;
+}
 
-        nav .MenuLayerTwo ul li a {
-            width: 120px;
-            background: black;
-            text-align: center;
-            padding: 10px;
-        }
+nav .MenuLayerTwo ul li a {
+    width: 120px;
+    background: black;
+    text-align: center;
+    padding: 10px;
+}
 
-    nav ul li a.MenuLayerOne.active + .MenuLayerTwo {
-        display: block;
-    }
+nav ul li a.MenuLayerOne.active + .MenuLayerTwo {
+    display: block;
+}
 
 .MenuLayerThree {
     position: absolute;
@@ -406,3 +294,4 @@ nav {
 nav ul li a.MenuLayerTwoItem.active + .MenuLayerThree {
     display: block;
 }
+

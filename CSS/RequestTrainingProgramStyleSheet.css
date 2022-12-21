@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;    
+    list-style: none;
+    text-decoration: none;
+    font-family: arial;
+}
+
+body{
+    font-family: Arial;
+}
+
+header {
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo{
+    margin-left: 30px;
+    width: 200px;
+}
+
+.Logo h1{
+    font-size: 18px;
+}
+
+#Footer {
+    width: 90%;
+  
+}
+
+#trainingBody {
+    background: url("../Images/RequestTrainingProgramBackgroundImage.png") no-repeat center;
+    background-size: cover;
+}
+
+#trainingBlockOne {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.trainingContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trainingContainer h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.trainingContainer h1{
+    color: white;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.trainingContainer p{
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.trainingForm {
+    width: 90%;
+    height: 90%;
+
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+#groupc{
+  margin: auto;
+  width: 60%;
+}
+
+.LeftBox {
+    background: url("../Images/RequestTrainingProgramFormImage.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    text-align: left;  
+}
+
+.RightBox {
+    height: 100%;
+    background-color: #1B1B1B;
+}
+
+.trainingInfo {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: #1B1B1B;
+    margin-bottom: 30px;
+    color: white;
+    border-bottom: 1px solid #B1B1B1;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+
+textarea {
+    min-height: 150px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+
+.group { 
+    position: relative; 
+    margin-bottom: 30px; 
+}
+  
+  input {
+    font-size: 14px;
+    height: 25px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #B1B1B1;
+    color: #B1B1B1;
+    background: rgba(0,0,0,0);
+    opacity: 0.5;
+    transition: 0.2s ease;
+  }
+  
+  label {
+    color: #B1B1B1; 
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 15px;
+    opacity: 0.5;
+    transition: 0.2s ease all; 
+    -moz-transition: 0.2s ease all; 
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label 		{
+    top: -10px;
+    font-size: 12px;
+    color: #B1B1B1;
+    opacity: 1;
+  }
+
+
+
+
+
+.ContactButton {
+    background: white;
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 5px 40px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    transition: all 0.2s ease 0s;
+}
+
+.ContactButton:hover {
+    opacity: 0.6;
+    background: red;
+}
+
+#ContactBLockOneP {
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
