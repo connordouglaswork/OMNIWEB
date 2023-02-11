@@ -79,7 +79,7 @@ header {
 .trainingForm {
     width: 90%;
     height: 90%;
-
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 2fr 1.2fr;
     justify-content: center;

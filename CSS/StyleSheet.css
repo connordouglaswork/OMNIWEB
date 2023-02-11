@@ -78,8 +78,8 @@ body {
     padding-bottom: 100px;
 }
 
-
-.SoftwareCard {    
+.SoftwareCard {   
+    margin:0 auto;
     position: relative;
     top: 0;
     left: 0;
@@ -124,7 +124,6 @@ body {
     transform: rotateY(180deg);
 }
 
-
 .SoftwareCardDisplay h1{
     padding: 10px;
     font-weight: bold;
@@ -167,25 +166,19 @@ body {
 }
 
 .CardImage {
-
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
 }
 
-#Footer {
-    width: 90%; 
-}
-
-
-@media(max-width:1200px){
+@media(max-width:1300px){
     #SoftwareLinks {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 80px;
-        margin: 10px 200px;
-        height: 150vh;
+        margin: 10px 40px;
+        height: 170vh;
         padding-bottom: 100px;
     }
 }

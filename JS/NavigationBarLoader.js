@@ -1,26 +1,24 @@
 window.onload = function(){
 var navbar = ` 
-<header>
 <a href="#" class="logo">OMNI ATHLETICS</a>
     <input type="checkbox" id="menu-bar">
     <label for="menu-bar">Menu</label>
     <nav class="navbar">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sign Up</a></li>
+        <li><a href="../Index.html">Home</a></li>
+        <li><a href="../Pages/RequestTrainingProgramPage.html">Sign Up</a></li>
         <li><a href="#">Downloads</a>
           <ul>
-            <li><a href="#">OMNI Calculator</a></li>
-            <li><a href="#">Injury Risk AI</a></li>
-            <li><a href="#">Composition Tracker</a></li>
+            <li><a href="../Pages/PageNotFound.html">OMNI Calculator</a></li>
+            <li><a href="../Pages/PageNotFound.html">Injury Risk AI</a></li>
+            <li><a href="../Pages/PageNotFound.html">Composition Tracker</a></li>
           </ul>
         </li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="../Pages/PageNotFound.html">Resources</a></li>
+        <li><a href="../Pages/PageNotFound.html">About</a></li>
+        <li><a href="../Pages/ContactPage.html">Contact</a></li>
       </ul>
-    <nav>
-</header>`;
+    <nav>`;
 
         // inserting navbar in beginning of body
         const NavBar = document.getElementsByClassName("LoadNavigation");
