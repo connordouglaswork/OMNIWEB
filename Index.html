@@ -3,110 +3,37 @@
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="Connor and Coby Douglas">
-    <meta name="description" content="Home apge for Sports science website offering tools and trianing plans to improve athletic performance">
+    <meta name="description" content="Home page for Sports science website offering tools and trianing plans to improve athletic performance">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OMNI ATHLETICS</title>
+    <link rel="stylesheet" href="CSS/NavigationStyleSheet.css" />
     <link rel="stylesheet" href="CSS/StyleSheet.css" />
     <script src="JS/CardController.js"></script>
 </head>
+<header>
+    <a href="#" class="logo">OMNI ATHLETICS</a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar">Menu</label>
+    <nav class="navbar">
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Pages/RequestTrainingProgramPage.html">Sign Up</a></li>
+        <li><a href="Pages/PageNotFound.html">Downloads</a>
+          <ul>
+            <li><a href="Pages/PageNotFound.html">OMNI Calculator</a></li>
+            <li><a href="Pages/PageNotFound.html">Injury Risk AI</a></li>
+            <li><a href="Pages/PageNotFound.html">Composition Tracker</a></li>
+          </ul>
+        </li>
+        <li><a href="Pages/PageNotFound.html">Resources</a></li>
+        <li><a href="Pages/PageNotFound.html">About</a></li>
+        <li><a href="Pages/ContactPage.html">Contact</a></li>
+      </ul>
+    <nav>
+  </header>
 <body>
-    <div id="IndexBlockOne">
-        <header>
-            <div class="Logo">
-                <h1>OMNI ATHLETICS</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="Index.html" class="MenuLayerOne">
-                            <span class="text">Home</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="MenuLayerOne">
-                            <span class="text">Services</span>
-                        </a>
-                        <div class="MenuLayerTwo">
-                            <ul>
-                                <li>
-                                    <a href="Pages/PageNotFound.html" class="MenuLayerTwoItem">
-                                        <span class="text">Training</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="MenuLayerTwoItem">
-                                        <span class="text">Web App</span>
-                                    </a>
-                                    <div class="MenuLayerThree">
-                                        <ul>
-                                            <li>
-                                                <a href="Pages/PageNotFound.html">
-                                                    <span class="text">1</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="Pages/PageNotFound.html">
-                                                    <span class="text">2</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="Pages/PageNotFound.html">
-                                                    <span class="text">3</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#" class="MenuLayerTwoItem">
-                                        <span class="text">Downloads</span>
-                                    </a>
-                                    <div class="MenuLayerThree">
-                                        <ul>
-                                            <li>
-                                                <a href="Pages/PageNotFound.html">
-                                                    <span class="text">1</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="Pages/PageNotFound.html">
-                                                    <span class="text">2</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="Pages/PageNotFound.html">
-                                                    <span class="text">3</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="Pages/PageNotFound.html" class="MenuLayerTwoItem">
-                                        <span class="text">Useful</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li>
-                        <a href="Pages/PageNotFound.html" class="MenuLayerOne">
-                            <span class="text">About</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="Pages/ContactPage.html" class="MenuLayerOne">
-                            <span class="text">Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        
+    <div id="IndexBlockOne">       
         <h1 id="WelcomeMSG">WELCOME TO OMNI ATHLETICS <br />FORGING ELITE FITNESS</h1>
         <p id="infoMSG">Omni Athletics is designed and managed by qualified sport scientists offering elite level <br /> training programs personalized to your fitness goals.</p>
         <a href="Pages/RequestProgramPage.html"><button id="RequestTrainingProgram">Become an OMNI Athlete</button></a>

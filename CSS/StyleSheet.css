@@ -1,31 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;    
-    list-style: none;
-    text-decoration: none;
-    font-family: arial;
-}
-
-body{
-    font-family: Arial;
-}
-
-header {
-    font-size: 14px;
-    color: white;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.Logo{
-    margin-left: 30px;
-    width: 200px;
-}
-
-.Logo h1{
-    font-size: 18px;
+body {
+    margin:0;
+    font-family:Arial
 }
 
 #IndexBlockOne {
@@ -37,7 +12,6 @@ header {
     background-position: center;
     position: relative;
 }
-
 
 #WelcomeMSG {
     font-size: 50px;
@@ -73,7 +47,7 @@ header {
 
 #IndexBlockTwo {
     width: 100%;
-    height: 85vh;
+    height: fill;
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -105,11 +79,11 @@ header {
 }
 
 
-.SoftwareCard {
+.SoftwareCard {    
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 300px;
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.8s ease;
@@ -201,97 +175,17 @@ header {
 }
 
 #Footer {
-    width: 90%;
-  
+    width: 90%; 
 }
 
 
-
-#notfound {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    align-items: center;
-    text-align: center;
+@media(max-width:1200px){
+    #SoftwareLinks {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 80px;
+        margin: 10px 200px;
+        height: 150vh;
+        padding-bottom: 100px;
+    }
 }
-
-#runningman {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    margin-top: 200px;
-}
-
-#notfound p {
-    color: white;
-    margin-top: 40px;
-    font-size: 12px;
-}
-
-
-/*------------------------------------------navigation section---------------------------------------------------*/
-nav {
-    width: 100%;
-    height: 40px;
-    background: black;
-}
-
-nav > ul {
-    display: flex;
-    justify-content: right;
-}
-
-nav ul li {
-    position: relative;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    height: 40px;
-    width: 100px;
-    text-align: center;
-    padding-top: 10px;
-    transition: all 0.2s ease;
-    box-sizing: border-box;
-}
-
-nav ul li a:hover,
-nav .MenuLayerTwo ul li a:hover,
-nav .MenuLayerTwo ul li a.active {
-    background: red;
-    opacity: 0.8;
-}
-
-nav .MenuLayerTwo {
-    position: absolute;
-    display: none;
-}
-
-nav .MenuLayerTwo ul li a {
-    width: 120px;
-    background: black;
-    text-align: center;
-    padding: 10px;
-}
-
-nav ul li a.MenuLayerOne.active + .MenuLayerTwo {
-    display: block;
-}
-
-.MenuLayerThree {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    display: none;
-}
-
-nav ul li a.MenuLayerTwoItem.active + .MenuLayerThree {
-    display: block;
-}
-
