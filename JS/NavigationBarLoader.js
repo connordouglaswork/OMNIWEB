@@ -14,8 +14,8 @@ var navbar = `
             <li><a href="../Pages/PageNotFound.html">Composition Tracker</a></li>
           </ul>
         </li>
-        <li><a href="../Pages/PageNotFound.html">Resources</a></li>
-        <li><a href="../Pages/PageNotFound.html">About</a></li>
+        <li><a href="../Pages/ResourcesPage.html">Resources</a></li>
+        <li><a href="../Pages/AboutUsPage.html">About</a></li>
         <li><a href="../Pages/ContactPage.html">Contact</a></li>
       </ul>
     <nav>`;
