@@ -86,8 +86,25 @@ body{
 }
 
 .gridBox2{
-    background-image: url(../Images/AboutPageBackground.png);
     background-size: cover;
+}
+#resource1{
+    background-image: url(../Images/myFitnessPal.webp);
+}
+#resource2{
+    background-image: url(../Images/NZMuscle.webp);
+}
+#resource3{
+    background-image: url(../Images/BodyBuilding.jpg);
+}
+#resource4{
+    background-image: url(../Images/Torpedo7.png);
+}
+#resource5{
+    background-image: url(../Images/Crossfit.jpg);
+}
+#resource6{
+    background-image: url(../Images/TNation.jpg);
 }
 
 .titleDesc{

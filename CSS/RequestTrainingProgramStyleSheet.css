@@ -10,48 +10,28 @@ body{
     font-family: Arial;
 }
 
-header {
-    font-size: 14px;
-    color: white;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.Logo{
-    margin-left: 30px;
-    width: 200px;
-}
-
-.Logo h1{
-    font-size: 18px;
-}
-
 #Footer {
     width: 90%;
   
 }
 
 #trainingBody {
-    background-color: #FAF9F6;;
-    background-size: cover;
+    background-image: url("../Images/RequestTrainingProgramBackgroundImage.png");
+    background-size: initial;
 }
 
 #trainingBlockOne {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 
-
-
 .trainingContainer {
+    margin-top: 100px;
     position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .trainingContainer h2{
@@ -63,9 +43,24 @@ header {
 
 .trainingContainer h1{
     color: white;
+    font-size: 30px;
     margin-top: 40px;
     margin-left: 30px;
     margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.trainingContainer h3{
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-right: 10px;
+    font-weight: lighter;
+}
+
+#textWrapper{
+    width:80%
 }
 
 .trainingContainer p{
@@ -76,15 +71,14 @@ header {
     font-size: 12px;
 }
 
-.trainingForm {
-    width: 80%;
-    height: 85%;
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 2fr 1.2fr;
-    justify-content: center;
+.trainingForm {    
+    max-width: 1600px;
+    height: 80vh;
     align-items: center;
     text-align: center;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
     background-color: #fff;
     box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 }
@@ -112,7 +106,7 @@ header {
     outline: none;
     background-color: #1B1B1B;
     margin-bottom: 30px;
-    color: white;
+    color: #B1B1B1;
     border-bottom: 1px solid #B1B1B1;
     font-family: Arial;
     font-size: 14px;
@@ -120,7 +114,7 @@ header {
 
 
 textarea {
-    min-height: 150px;
+    min-height: 100px;
     font-family: Arial;
     font-size: 14px;
 }
@@ -131,7 +125,7 @@ textarea {
     margin-bottom: 30px; 
 }
   
-  input {
+  .inputbox {
     font-size: 14px;
     height: 25px;
     padding: 10px 10px 10px 5px;
@@ -142,11 +136,11 @@ textarea {
     border-bottom: 1px solid #B1B1B1;
     color: #B1B1B1;
     background: rgba(0,0,0,0);
-    opacity: 0.5;
+    opacity: 0.8;
     transition: 0.2s ease;
   }
   
-  label {
+  .inputLabel {
     color: #B1B1B1; 
     font-size: 14px;
     font-weight: normal;
@@ -154,14 +148,14 @@ textarea {
     pointer-events: none;
     left: 5px;
     top: 15px;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: 0.2s ease all; 
     -moz-transition: 0.2s ease all; 
     -webkit-transition: 0.2s ease all;
   }
   
   /* active state */
-  input:focus ~ label, input:valid ~ label 		{
+  .inputbox:focus ~ label, .inputbox:valid ~ label 		{
     top: -10px;
     font-size: 12px;
     color: #B1B1B1;
@@ -190,10 +184,29 @@ textarea {
     background: red;
 }
 
-#ContactBLockOneP {
+#TrainingBLockTwoP {
     font-size: 12px;
-    color: black;
+    color: white;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
+
+@media(max-width:1200px){
+    .LeftBox {
+        display: none;
+    }
+
+    .trainingForm {    
+        width: 800px;
+        height: 80vh;
+        align-items: center;
+        text-align: center;
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #fff;
+        box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    }
+}
