@@ -7,7 +7,7 @@ var navbar = `
       <ul>
         <li><a href="../Index.html">Home</a></li>
         <li><a href="../Pages/RequestTrainingProgramPage.html">Sign Up</a></li>
-        <li><a href="">Downloads</a>
+        <li><a href="#">Downloads</a>
           <ul>
             <li><a href="../Pages/PageNotFound.html">OMNI Calculator</a></li>
             <li><a href="../Pages/PageNotFound.html">Injury Risk AI</a></li>
