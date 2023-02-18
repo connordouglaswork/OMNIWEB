@@ -24,18 +24,20 @@
                 </div>
                 <div class="RightBox">
                     <h2>Contact Us</h2>
-                    <div id="groupc">
-                        <div class="group">      
-                            <input class="white" type="text" required>
-                            <label class="inputLabel">Your Name</label>
+                    <form method="post">
+                        <div id="groupc">
+                            <div class="group">      
+                                <input id="name" class="white" type="text" required>
+                                <label class="inputLabel">Your Name</label>
+                            </div>
+                            <div class="group">      
+                            <input id="email" class="white" type="text" required>
+                            <label class="inputLabel">Your Email</label>
+                            </div>
+                            <textarea id="message" placeholder="Message" class="ContactInfo"></textarea>
+                        <button id="btn" class="ContactButton">Send</button>
                         </div>
-                          <div class="group">      
-                           <input class="white" type="text" required>
-                          <label class="inputLabel">Your Email</label>
-                        </div>
-                        <textarea placeholder="Message" class="ContactInfo"></textarea>
-                    <button class="ContactButton">Send</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -46,4 +48,28 @@
         <p id="ContactBLockTwoP">@CopyRight OMNI ATHLETICS - New Zealand</p>
     </div>
 </body>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function(e){
+        e.preventDefault()
+        console.log('btn press');
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+        var body = 'Name: ' + name + '<br/> Email: ' + email + '<br/> Message: ' + message;
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "omni.athletics.nz@gmail.com",
+    Password : "9B60DCCBFF5983511A2CB351F67409E9C226",
+    To : "omni.athletics.nz@gmail.com",
+    From : "omni.athletics.nz@gmail.com",
+    Subject : "Contact Query",
+    Body : body
+}).then(
+  message => alert(message)
+);
+    })
+</script>
 </html>

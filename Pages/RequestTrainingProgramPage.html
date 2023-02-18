@@ -28,41 +28,70 @@
                 </div>
                 <div class="RightBox">
                     <h2>Sign Up</h2>
-                    <div id="groupc">
-                        <div class="group">      
-                            <input class="inputbox" type="text" required>
-                            <label class="inputLabel">Name</label>
+                    <form method="post">
+                        <div id="groupc">
+                            <div class="group">      
+                                <input id="name" class="inputbox" type="text" required>
+                                <label class="inputLabel">Name</label>
+                            </div>
+                            <div class="group">      
+                                <input id="age" class="inputbox" type="text" required>
+                                <label class="inputLabel">Age</label>
+                            </div>
+                            <div class="group">      
+                                <input id="sex" class="inputbox" type="text" required>
+                                <label class="inputLabel">Sex</label>
+                            </div>
+                            <div class="group">      
+                            <input id="email" class="inputbox" type="text" required>
+                            <label class="inputLabel">Email</label>
+                            </div>
+                            <div class="group">      
+                                <input id="goals" class="inputbox" type="text" required>
+                                <label class="inputLabel">Training Goals</label>
+                            </div>
+                            <div class="group">      
+                                <input id="injuries" class="inputbox" type="text" required>
+                                <label class="inputLabel">Current and Past Injuries</label>
+                            </div>
+                            <textarea id="info" placeholder="Any extra infomation you would like to tell the OMNI Athletics team." class="trainingInfo"></textarea>
+                        <button id="btn" class="ContactButton">Sign Up</button>
                         </div>
-                        <div class="group">      
-                            <input class="inputbox" type="text" required>
-                            <label class="inputLabel">Age</label>
-                        </div>
-                        <div class="group">      
-                            <input class="inputbox" type="text" required>
-                            <label class="inputLabel">Sex</label>
-                        </div>
-                          <div class="group">      
-                           <input class="inputbox" type="text" required>
-                          <label class="inputLabel">Email</label>
-                        </div>
-                        <div class="group">      
-                            <input class="inputbox" type="text" required>
-                            <label class="inputLabel">Training Goals</label>
-                        </div>
-                        <div class="group">      
-                            <input class="inputbox" type="text" required>
-                            <label class="inputLabel">Current and Past Injuries</label>
-                        </div>
-                        <textarea placeholder="Any extra infomation you would like to tell the OMNI Athletics team." class="trainingInfo"></textarea>
-                    <button class="ContactButton">Sign Up</button>
-                    </div>
+                </form>
                 </div>
             </div>
         </div>
         <hr size="1" width="90%" color="white" style="margin: auto;">
         <p id="TrainingBLockTwoP">@CopyRight OMNI ATHLETICS - New Zealand</p>
         </br>
-    </div>
-    
+    </div>   
 </body>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function(e){
+        e.preventDefault()
+        console.log('btn press');
+        var name = document.getElementById('name').value;
+        var age = document.getElementById('age').value;
+        var sex = document.getElementById('sex').value;
+        var email = document.getElementById('email').value;
+        var goals = document.getElementById('goals').value;
+        var injuries = document.getElementById('injuries').value;
+        var info = document.getElementById('info').value;
+        var body = 'Name: ' + name + '<br/> Email: ' + email + '<br/> Age: ' + age + '<br/> Sex: ' + sex + '<br/> Goals: ' + goals + '<br/> Injuries: ' + injuries + '<br/> Extra Info: ' + info;
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "omni.athletics.nz@gmail.com",
+    Password : "9B60DCCBFF5983511A2CB351F67409E9C226",
+    To : "omni.athletics.nz@gmail.com",
+    From : "omni.athletics.nz@gmail.com",
+    Subject : "Sign Up Request",
+    Body : body
+}).then(
+  message => alert(message)
+);
+    })
+</script>
 </html>
