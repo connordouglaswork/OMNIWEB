@@ -82,6 +82,10 @@ header label{
         display:initial;
     }
     
+    header .navbar ul li ul li{
+        background:black;
+    }
+
     header .navbar{
         position: absolute;
         top:100%;
@@ -107,5 +111,6 @@ header label{
     
     #menu-bar:checked ~ .navbar{
         display: initial
-    }    
+    }  
+    
 }
