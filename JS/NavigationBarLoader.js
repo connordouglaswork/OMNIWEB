@@ -9,9 +9,9 @@ var navbar = `
         <li><a href="../Pages/RequestTrainingProgramPage.html">Sign Up</a></li>
         <li><a href="#">Downloads</a>
           <ul>
-            <li><a href="../Pages/PageNotFound.html">OMNI Calculator</a></li>
-            <li><a href="../Pages/PageNotFound.html">Injury Risk AI</a></li>
-            <li><a href="../Pages/PageNotFound.html">Remote Coach</a></li>
+            <li><a href="../Pages/OmniCalculatorPage.html">OMNI Calculator</a></li>
+            <li><a href="../Pages/InjuryRiskAIPage.html">Injury Risk AI</a></li>
+            <li><a href="../Pages/RemoteCoachPage.html">Remote Coach</a></li>
           </ul>
         </li>
         <li><a href="../Pages/ResourcesPage.html">Resources</a></li>

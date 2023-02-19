@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;    
+    list-style: none;
+    text-decoration: none;
+    font-family: arial;
+}
+
+body{
+    font-family: Arial;
+    background-color: #1B1B1B;
+    background: cover;
+}
+
+#CalculatorBlockOne{
+    height: 100vh;
+}
+
+#tag {
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+    font-style: italic;
+}
+
+#CalculatorBlockOne h1{
+    text-align: center;
+    size:30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+iframe{
+    padding-top: 40px;
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+    height: 450px;
+    width: 800px;
+}
+
+#Download {
+    background: red;
+    color: white;
+    font-size: 22px;
+    text-transform: capitalize;
+    padding: 15px 50px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    transition: all 0.2s ease 0s;
+}
+
+#Download:hover {
+    opacity: 0.6;
+}
+
+#content{
+    height: 160px;
+    width: 700px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    color: black;
+    background-color: #FAF9F6;
+    margin-bottom: 20px;
+}
+
+#topLine{
+    text-align: center;
+}
+
+#insideContent{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#IndexBlockTwoP {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+@media(max-width:700px){
+    iframe{
+        padding-top: 40px;
+        display: block;
+        margin: auto;
+        padding-bottom: 20px;
+        height: 350px;
+        width: 100%;
+    }
+
+    #content{
+        height: 300px;
+        width: 100%;
+        padding: 10px;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        color: black;
+        background-color: #FAF9F6;
+    }
+}
