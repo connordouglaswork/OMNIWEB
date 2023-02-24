@@ -10,12 +10,13 @@ body{
     font-family: Arial;
 }
 
+/*set background color*/
 #resourcebody{
     background-color: #1B1B1B;
     background-size: cover;
-    height: 200vh;
 }
 
+/*set page height for 6 sections of content - static*/
 #ResourceBlockOne {
     width: 100%;
     height: 270vh;
@@ -23,6 +24,7 @@ body{
     color: #fff;
 }
 
+/*footer*/
 #ResourceBlockTwo {
     width: 100%;
     height: fill;
@@ -40,8 +42,7 @@ body{
     padding-bottom: 30px;
 }
 
-
-
+/*set up grids of 2x1 horizontal to allow for content and image displays inline*/
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -51,6 +52,7 @@ body{
     height: 40vh;
 }
 
+/*text styling*/
 .heading{
     height: 10vh;
     color: #FAF9F6;
@@ -63,6 +65,7 @@ body{
     margin-top: 65px;
 }
 
+/*gridbox1 contains text*/
 .gridBox1{
     background-color: #FAF9F6;
     color: black
@@ -85,9 +88,11 @@ body{
     height:40%;
 }
 
+/*gridbox2 contains images*/
 .gridBox2{
     background-size: cover;
 }
+/*add in each image here*/
 #resource1{
     background-image: url(../Images/myFitnessPal.webp);
 }
@@ -113,6 +118,7 @@ body{
     padding-bottom: 0px;
 }
 
+/*button navigating to link of webpage in content*/
 #InfoButton {
     background: black;
     color: #FAF9F6;
@@ -130,6 +136,7 @@ body{
     opacity: 0.6;
 }
 
+/*move grids to be 1x2 vertical to fit narrow page width(like phones)*/
 @media(max-width:1100px){
     .grid {
         display: grid;

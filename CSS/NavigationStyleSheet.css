@@ -6,6 +6,7 @@
     text-decoration: none;
   }
   
+/*Position NavBar Header*/
 header{
     position: fixed;
     top:0;
@@ -19,21 +20,25 @@ header{
     z-index: 1000;
 }
   
+/*Omni Athletics styling*/
 header .logo{
     font-size: 20px;
     font-weight: bolder; 
     color: white;
 }
-  
+
+/*remove styling*/
 header .navbar ul{
     list-style: none;
-  }
-  
-  header .navbar ul li{
+}
+
+/*List item positions*/
+header .navbar ul li{
     position: relative;
     float: left;
 }
   
+/*text styling*/
 header .navbar ul li a{
     font-size: 16px;
     padding:14px;
@@ -41,10 +46,12 @@ header .navbar ul li a{
     display: block;
 }
 
+/*on hover red*/
 header .navbar ul li a:hover{
     background:red;
 }
-  
+
+/*navbar styling black boxed*/
 header .navbar ul li ul{
     position: absolute;
     left:0;
@@ -53,26 +60,31 @@ header .navbar ul li ul{
     display:none;   
 }
 
+/*fill*/
 header .navbar ul li ul li{
     width:100%;
 }
   
+/*show*/
 header .navbar ul li:focus-within > ul,
 header .navbar ul li:hover > ul{
     display: initial;
 }
   
+/*hide selector submenu*/
 #menu-bar{
     display:none;
 }
   
+/*white styling, hidden label for selector*/
 header label{
     color:white;
     font-size:16px;
     cursor:pointer;
     display:none;
 }
-  
+ 
+/*on 900px screen width change navbar to hide and give user option to open the menu/navbar vertically, good for small screens/phones*/
 @media(max-width:900px){
     header{
         padding:14px;
@@ -111,6 +123,5 @@ header label{
     
     #menu-bar:checked ~ .navbar{
         display: initial
-    }  
-    
+    }      
 }

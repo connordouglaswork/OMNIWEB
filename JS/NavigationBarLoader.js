@@ -19,8 +19,7 @@ var navbar = `
         <li><a href="../Pages/ContactPage.html">Contact</a></li>
       </ul>
     <nav>`;
-
-        // inserting navbar in beginning of body
+        // inserting navbar in header
         const NavBar = document.getElementsByClassName("LoadNavigation");
         NavBar[0].insertAdjacentHTML("afterbegin", navbar);
 }

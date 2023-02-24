@@ -15,16 +15,19 @@ body{
   
 }
 
+/*set background to be visually similar to content forms image*/
 #trainingBody {
     background-image: url("../Images/RequestTrainingProgramBackgroundImage.png");
     background-size: initial;
 }
 
+/*page set up*/
 #trainingBlockOne {
     width: 100%;
     height: 90vh;
 }
 
+/*build container for form*/
 .trainingContainer {
     margin-top: 100px;
     position: relative;
@@ -71,6 +74,7 @@ body{
     font-size: 12px;
 }
 
+/*build the contact pages form with two grids cells of different sizes*/
 .trainingForm {    
     max-width: 1600px;
     height: 80vh;
@@ -83,11 +87,13 @@ body{
     box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 }
 
+/*forms content(c)*/
 #groupc{
   margin: auto;
   width: 60%;
 }
 
+/*left box on grid to contian the image and info*/
 .LeftBox {
     background: url("../Images/RequestTrainingProgramFormImage.png") no-repeat center;
     background-size: cover;
@@ -95,6 +101,7 @@ body{
     text-align: left;  
 }
 
+/*right box to contain inputs*/
 .RightBox {
     height: 100%;
     background-color: #1B1B1B;
@@ -112,20 +119,18 @@ body{
     font-size: 14px;
 }
 
-
 textarea {
     min-height: 100px;
     font-family: Arial;
     font-size: 14px;
 }
 
-
 .group { 
     position: relative; 
     margin-bottom: 30px; 
 }
   
-  .inputbox {
+.inputbox {
     font-size: 14px;
     height: 25px;
     padding: 10px 10px 10px 5px;
@@ -138,9 +143,10 @@ textarea {
     background: rgba(0,0,0,0);
     opacity: 0.8;
     transition: 0.2s ease;
-  }
+}
   
-  .inputLabel {
+/*input label styling, transitions from on line to above when selected*/
+.inputLabel {
     color: #B1B1B1; 
     font-size: 14px;
     font-weight: normal;
@@ -152,7 +158,7 @@ textarea {
     transition: 0.2s ease all; 
     -moz-transition: 0.2s ease all; 
     -webkit-transition: 0.2s ease all;
-  }
+}
   
   /* active state */
   .inputbox:focus ~ label, .inputbox:valid ~ label 		{
@@ -162,10 +168,7 @@ textarea {
     opacity: 1;
   }
 
-
-
-
-
+/*button styling*/
 .ContactButton {
     background: white;
     color: black;
@@ -192,7 +195,7 @@ textarea {
     margin-bottom: 0px;
 }
 
-
+/*make form responsive and just have the inputs on narrow widths*/
 @media(max-width:1200px){
     .LeftBox {
         display: none;

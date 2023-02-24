@@ -3,6 +3,7 @@ body {
     font-family:Arial
 }
 
+/*Set image background for first block*/
 #IndexBlockOne {
     width: 100%;
     height: 100vh;
@@ -13,6 +14,7 @@ body {
     position: relative;
 }
 
+/*style the text to sit centre*/
 #WelcomeMSG {
     font-size: 50px;
     color: white;
@@ -27,6 +29,7 @@ body {
     padding: 200px 0px 40px 0px;
 }
 
+/*styling sign up button*/
 #RequestTrainingProgram {
     background: red;
     color: white;
@@ -45,6 +48,7 @@ body {
     opacity: 0.6;
 }
 
+/*set block two to black cover*/
 #IndexBlockTwo {
     width: 100%;
     height: fill;
@@ -55,6 +59,7 @@ body {
     margin: 0px;  
 }
 
+/*text sits centre*/
 #IndexBlockTwo h2 {
     margin: 0px;
     padding: 40px 0px 0px 0px;
@@ -69,6 +74,7 @@ body {
     padding-bottom: 30px;
 }
 
+/*use a 3x1 grid to display software cards*/
 #SoftwareLinks {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -78,6 +84,7 @@ body {
     padding-bottom: 100px;
 }
 
+/*cards sit centre*/
 .SoftwareCard {   
     margin:0 auto;
     position: relative;
@@ -90,10 +97,12 @@ body {
     cursor: pointer;
 }
 
+/*on card hover flip the card*/
 .SoftwareCard:hover {
     transform: rotateY(180deg);
 }
 
+/*back side of card hidden + styling of card*/
 .SoftwareCardDisplay {
     position: absolute;
     top: 0;
@@ -108,6 +117,7 @@ body {
     background-color: black;
 }
 
+/*card styling*/
 .SoftwareCardInfo {
     position: absolute;
     top: 0;
@@ -172,6 +182,7 @@ body {
     padding: 40px;
 }
 
+/*on screen width narrowing make cards responsive and move grid from horizontal to vertical*/
 @media(max-width:1300px){
     #SoftwareLinks {
         display: grid;

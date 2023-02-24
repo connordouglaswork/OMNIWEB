@@ -12,10 +12,12 @@ body{
     background: cover;
 }
 
+/*set page height*/
 #CalculatorBlockOne{
     height: 100vh;
 }
 
+/*tag styling to be visually light*/
 #tag {
     font-size: 14px;
     font-weight: lighter;
@@ -32,6 +34,7 @@ body{
     margin-bottom: 20px;
 }
 
+/*set yt video sizing and format*/
 iframe{
     padding-top: 40px;
     display: block;
@@ -41,6 +44,7 @@ iframe{
     width: 800px;
 }
 
+/*button styling*/
 #Download {
     background: red;
     color: white;
@@ -58,6 +62,7 @@ iframe{
     opacity: 0.6;
 }
 
+/*content area for desc*/
 #content{
     height: 160px;
     width: 700px;
@@ -74,6 +79,7 @@ iframe{
     text-align: center;
 }
 
+/*padding/margin adjustments*/
 #insideContent{
     margin-top: 10px;
     padding: 5px;
@@ -86,6 +92,7 @@ iframe{
     padding-bottom: 30px;
 }
 
+/*make page responsive*/
 @media(max-width:700px){
     iframe{
         padding-top: 40px;
