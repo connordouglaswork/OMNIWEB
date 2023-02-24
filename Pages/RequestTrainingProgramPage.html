@@ -17,7 +17,9 @@
 <body id="trainingBody">
     <div id="trainingBlockOne">
         <div class="trainingContainer">
+            <!--Sign up form-->
             <div class="trainingForm">
+                <!--left box holds image and info-->
                 <div class="LeftBox">
                     <h1>OMNI Athletics Training Programs</h1>
                     <div id="textWrapper">
@@ -26,6 +28,7 @@
                         <h3>The training plan is designed by Sports Scientists and tailor made for your health, fitness or sporting goals.</h3>
                     </div>
                 </div>
+                <!--right box holds inputs-->
                 <div class="RightBox">
                     <h2>Sign Up</h2>
                     <form method="post">
@@ -57,10 +60,11 @@
                             <textarea id="info" placeholder="Any extra infomation you would like to tell the OMNI Athletics team." class="trainingInfo"></textarea>
                         <button id="btn" class="ContactButton">Sign Up</button>
                         </div>
-                </form>
+                    </form>
                 </div>
             </div>
         </div>
+        <!--footer-->
         <hr size="1" width="90%" color="white" style="margin: auto;">
         <p id="TrainingBLockTwoP">@CopyRight OMNI ATHLETICS - New Zealand</p>
         </br>
@@ -69,10 +73,12 @@
 <script src="https://smtpjs.com/v3/smtp.js">
 </script>
 <script>
+    //following send emaisl to company via SMTP
     var btn = document.getElementById('btn');
     btn.addEventListener('click', function(e){
         e.preventDefault()
         console.log('btn press');
+        //get input fields
         var name = document.getElementById('name').value;
         var age = document.getElementById('age').value;
         var sex = document.getElementById('sex').value;
@@ -80,6 +86,7 @@
         var goals = document.getElementById('goals').value;
         var injuries = document.getElementById('injuries').value;
         var info = document.getElementById('info').value;
+        //email message
         var body = 'Name: ' + name + '<br/> Email: ' + email + '<br/> Age: ' + age + '<br/> Sex: ' + sex + '<br/> Goals: ' + goals + '<br/> Injuries: ' + injuries + '<br/> Extra Info: ' + info;
         Email.send({
     Host : "smtp.elasticemail.com",
@@ -89,8 +96,9 @@
     From : "omni.athletics.nz@gmail.com",
     Subject : "Sign Up Request",
     Body : body
+    //show sent successful message
 }).then(
-  message => alert(message)
+  message => alert("Sign Up Successful. \nWelcome, you are now an OMNI ATHLETE. \nThe team is working on your free Omni Athletics training program. \nThe training plan will be sent to you as soon as possible. \nWe wish you the best with your athletic endeavours")
 );
     })
 </script>

@@ -17,11 +17,14 @@
 <body id="ContactBody">
     <div id="ContactBlockOne">
         <div class="ContactContainer">
+            <!--contact form with 2x1 gridbox-->
             <div class="ContactForm">
+                <!--left side for info/image-->
                 <div class="LeftBox">
                     <h1>Have a question in mind?</h1>
                     <p>Reach out to the team here at Omni Athletics and we will get back to you as soon as we can.</p>
                 </div>
+                <!--Right for inputs/submit-->
                 <div class="RightBox">
                     <h2>Contact Us</h2>
                     <form method="post">
@@ -44,6 +47,7 @@
         <br>
         <br>
         <br>
+        <!--footer-->
         <hr size="1" width="90%" color="white" style="margin: auto;">
         <p id="ContactBLockTwoP">@CopyRight OMNI ATHLETICS - New Zealand</p>
     </div>
@@ -51,13 +55,17 @@
 <script src="https://smtpjs.com/v3/smtp.js">
 </script>
 <script>
+    //following code uses smtp to send emails to company account
+    //see company discord channel for more information
     var btn = document.getElementById('btn');
     btn.addEventListener('click', function(e){
         e.preventDefault()
         console.log('btn press');
+        //get form inputs
         var name = document.getElementById('name').value;
         var email = document.getElementById('email').value;
         var message = document.getElementById('message').value;
+        //build the email
         var body = 'Name: ' + name + '<br/> Email: ' + email + '<br/> Message: ' + message;
         Email.send({
     Host : "smtp.elasticemail.com",
@@ -68,7 +76,8 @@
     Subject : "Contact Query",
     Body : body
 }).then(
-  message => alert(message)
+    //display popup message
+  message => alert("Your query has been sent. \nOmni Athletics will get back to you as soon as possible.")
 );
     })
 </script>
