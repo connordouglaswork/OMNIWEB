@@ -57,12 +57,14 @@ header .navbar ul li ul{
     left:0;
     width:200px;
     background:#1B1B1B;
+    border: 2px solid red;
     display:none;   
 }
 
 /*fill*/
 header .navbar ul li ul li{
     width:100%;
+    border-bottom: 2px solid black;
 }
   
 /*show*/
@@ -109,16 +111,19 @@ header label{
     
     header .navbar ul li{
         width: 100%;
+        border-bottom: 2px solid black;
     }
     
     header .navbar ul li ul{
         position: relative;
         width: 100%;
+        border: none;
     }
     
     header .navbar ul li ul li{
         position: relative;
-        width: 100%;
+        width: 100%;  
+        border-bottom: 2px solid #1B1B1B;
     }
     
     #menu-bar:checked ~ .navbar{
